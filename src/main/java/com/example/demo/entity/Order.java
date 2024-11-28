@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,13 +9,13 @@ import java.util.List;
 
 @Entity
 @Getter
-public class Order {
+@Table(name = "orders")
+public class Order extends BaseEntity {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private Long memberId;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date orderDate;

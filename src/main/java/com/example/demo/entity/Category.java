@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.entity;
 
+import com.example.demo.entity.item.Item;
 import jakarta.persistence.*;
 import lombok.Getter;
 

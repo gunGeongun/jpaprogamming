@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.entity;
 
+import com.example.demo.entity.item.Item;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -10,10 +11,6 @@ public class OrderItem {
     @Id
     @GeneratedValue
     private Long id;
-
-    private Long orderId;
-
-    private Long itemId;
 
     private int orderPrice;
 

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Entity
 @Getter
-public class Member {
+public class Member extends BaseEntity {
     @Id
     @GeneratedValue
     private Long id;
