@@ -11,11 +11,8 @@ public class Delivery {
     @GeneratedValue
     private Long id;
 
-    private String city;
-
-    private String street;
-
-    private String zipCode;
+    @Embedded
+    private Address address;
 
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status;
